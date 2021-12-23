@@ -1,0 +1,25 @@
+local lighting = game.Lighting
+        if lighting:FindFirstChild("ColorCorrection") then
+            lighting:FindFirstChild("ColorCorrection"):Remove()
+        end
+        if lighting:FindFirstChild("Correction") then
+            lighting:FindFirstChild("Correction"):Remove()
+        end
+
+        local sunray = Instance.new("SunRaysEffect", lighting)
+        local sky = lighting.Sky
+        sky.SkyboxBk = "http://www.roblox.com/asset/?id=185544271"
+        sky.SkyboxDn = "http://www.roblox.com/asset/?id=185544298"
+        sky.SkyboxFt = "http://www.roblox.com/asset/?id=185544329"
+        sky.SkyboxLf = "http://www.roblox.com/asset/?id=185544349"
+        sky.SkyboxRt = "http://www.roblox.com/asset/?id=185544367"
+        sky.SkyboxUp = "http://www.roblox.com/asset/?id=185544404"
+
+        sky.StarCount = 3000
+        sky.SunAngularSize = 21
+        sky.MoonAngularSize = 11
+
+        local correction = Instance.new("ColorCorrectionEffect", lighting)
+        correction.Name = "Correction"
+        correction.Saturation = -0.4
+        correction.TintColor = Color3.fromRGB(224, 241, 255)
