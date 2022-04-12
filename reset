@@ -12,11 +12,6 @@ stationaryrespawn = not stationaryrespawn
     end
 end
 
-
-
-
-
-
 game:GetService("UserInputService").InputBegan:connect(StatRespawn)
 
 
@@ -44,3 +39,5 @@ wait(0.6)
 needsrespawning = false
 haspos = false
 end)
+
+print("hello Men")
