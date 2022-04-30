@@ -3,8 +3,6 @@ local needsrespawning = false
 local haspos = false
 local pos = CFrame.new()
 
-print("aphixe")
-print("reset executed")
 
 function StatRespawn(inputObject, gameProcessedEvent)
     if inputObject.KeyCode == Enum.KeyCode.N and gameProcessedEvent == false then        
@@ -40,4 +38,3 @@ needsrespawning = false
 haspos = false
 end)
 
-print("hello Men")
