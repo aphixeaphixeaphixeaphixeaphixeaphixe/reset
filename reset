@@ -2,6 +2,20 @@ local stationaryrespawn = false
 local needsrespawning = false
 local haspos = false
 local pos = CFrame.new()
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.965566695, 0)
+TextLabel.Size = UDim2.new(0, 32, 0, 24)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "a"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 5.000
 
 
 function StatRespawn(inputObject, gameProcessedEvent)
