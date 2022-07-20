@@ -52,4 +52,3 @@ needsrespawning = false
 haspos = false
 end)
 
-loadstring(game:HttpGet(("https://pastebin.com/raw/eMk5XtSs"),true))()
